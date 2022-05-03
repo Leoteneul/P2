@@ -6,11 +6,15 @@
     padding: 15px;
     width: 100%;
     color: darken($cGrisHard, 10%);
-    &__localdot{
-        display: flex;
-        align-items: center;
-        margin-right: 10px;
-    }
+        & i{
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+        @include tablette-only{
+            width: 100%;
+            background-color: $cGrisSoft;
+        }
 }
 
 .intro{
@@ -19,6 +23,7 @@
     align-items: center;
     text-align: center;
     background-color: $cGrisSoft;
+    
     padding: 30px 0 50px 0;
     
     & h2{
@@ -27,5 +32,18 @@
 
     & p{
         padding: 15px;
+    }
+
+    @include tablette-only{
+        width: 100%;
+
+            & h2{
+                font-size: 30px;
+            }
+
+            & p{
+                font-size: 20px;
+            }
+
     }
 }

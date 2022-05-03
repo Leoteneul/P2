@@ -1,3 +1,7 @@
+@mixin shadow{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
 @mixin btn{
     
     background: rgb(2,0,36);
@@ -8,8 +12,19 @@
     align-items: center;
     border: none;
     border-radius: 80px;
-    padding: 12px 25px 12px 25px;
+    padding: 14px 25px 14px 25px;
     margin-top: 10px;
     font-family: 'RobotoR';
     font-size: 15px;
+    @include shadow;
+    @include tablette-only{
+        padding: 17px 40px 17px 40px;
+        font-size: 20px;
+    }
+}
+
+@mixin tablette-only{
+    @media screen and (min-width: map-get($breakpoint, tablette)) {
+        @content;
+    }
 }

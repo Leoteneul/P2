@@ -6,3 +6,7 @@ $cBlack: black;
 $cGrisSoft: darken($cWhite, 10%);
 $cGrisMed: darken($cWhite, 15%);
 $cGrisHard: darken($cWhite, 60%);
+
+$breakpoint: (
+    tablette: 599px
+)
