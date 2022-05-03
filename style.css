@@ -1,3 +1,90 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url("Shrikhand.ttf");
+}
+@font-face {
+  font-family: "RobotoL";
+  src: url("RobotoL.ttf");
+}
+@font-face {
+  font-family: "RobotoR";
+  src: url("RobotoR.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+p {
+  font-family: "RobotoR", sans-serif;
+  font-size: 17px;
+  color: #666666;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: "RobotoR", sans-serif;
+}
+
+.btn {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(172deg, rgb(2, 0, 36) 0%, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 56%);
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 80px;
+  padding: 12px 25px 12px 25px;
+  margin-top: 10px;
+  font-family: "RobotoR";
+  font-size: 15px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  padding: 15px 0 10px 0;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  background-color: #d9d9d9;
+  color: #666666;
+  padding: 15px;
+  width: 100%;
+  color: #4d4d4d;
+}
+.localisation__localdot {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #e6e6e6;
+  padding: 30px 0 50px 0;
+}
+.intro h2 {
+  padding: 0px 50px 0 50px;
+}
+.intro p {
+  padding: 15px;
+}
 
 /*# sourceMappingURL=style.css.map */

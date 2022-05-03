@@ -1,0 +1,15 @@
+@mixin btn{
+    
+    background: rgb(2,0,36);
+    background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 56%);
+    cursor: pointer;
+    color: $cWhite;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 80px;
+    padding: 12px 25px 12px 25px;
+    margin-top: 10px;
+    font-family: 'RobotoR';
+    font-size: 15px;
+}
