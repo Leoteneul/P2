@@ -1,17 +1,17 @@
-*,
-*::after,
-*::before {
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('Shrikhand.ttf');
+}
+@font-face {
+    font-family: 'RobotoL';
+    src: url('RobotoL.ttf');
+}
+@font-face {
+    font-family: 'RobotoR';
+    src: url('RobotoR.ttf');
+}
+*{
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
-}
-
-html {
-    // 10px div by def of 16px
-    font-size: 62.5%;
-}
-
-body {
     box-sizing: border-box;
-    background: $colour-secondary;
 }

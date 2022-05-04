@@ -1,3 +1,120 @@
-p{
-    color: blue;
+@font-face {
+  font-family: "Shrikhand";
+  src: url("Shrikhand.ttf");
 }
+@font-face {
+  font-family: "RobotoL";
+  src: url("RobotoL.ttf");
+}
+@font-face {
+  font-family: "RobotoR";
+  src: url("RobotoR.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "RobotoR", sans-serif;
+  font-size: 17px;
+  color: #666666;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: "RobotoR", sans-serif;
+}
+
+.btn {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(172deg, rgb(2, 0, 36) 0%, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 56%);
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 80px;
+  padding: 14px 25px 14px 25px;
+  margin-top: 10px;
+  font-family: "RobotoR";
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+@media screen and (min-width: 599px) {
+  .btn {
+    padding: 17px 40px 17px 40px;
+    font-size: 20px;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .header__top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  box-shadow: 0px 1px 8px -3px #000000;
+  z-index: 5;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  background-color: #d9d9d9;
+  color: #666666;
+  padding: 15px;
+  width: 100%;
+  color: #4d4d4d;
+}
+.localisation i {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+@media screen and (min-width: 599px) {
+  .localisation {
+    width: 100%;
+    background-color: #e6e6e6;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #e6e6e6;
+  width: 100%;
+  padding: 30px 0 50px 0;
+}
+.intro h2 {
+  padding: 0px 50px 0 50px;
+}
+.intro p {
+  padding: 15px;
+}
+@media screen and (min-width: 599px) {
+  .intro {
+    width: 100%;
+    box-shadow: inset 0px -4px 5px -1px #d9d9d9;
+  }
+  .intro h2 {
+    font-size: 30px;
+  }
+  .intro p {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
