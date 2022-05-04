@@ -201,7 +201,7 @@ header .header__top {
     justify-content: center;
   }
   .fonction__box__item {
-    max-width: 600px;
+    max-width: 550px;
     margin-left: 20px;
   }
 }

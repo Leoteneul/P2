@@ -101,13 +101,10 @@
     }
     @include tablette-only{
         display: flex;
-        
         flex-wrap: wrap;
         margin-top: 20px;
         
             &__item{
-                // background-color: red;
-                
                 display: flex;
                 flex-direction: column-reverse;
                     & p{
@@ -119,9 +116,9 @@
                         margin: 0;
                         font-size: 18px;
                         
-                        & i{
-                            font-size: 22px;
-                        }
+                            & i{
+                                font-size: 22px;
+                            }
 
                     }
             }
@@ -133,7 +130,7 @@
         justify-content: center;
 
             &__item{
-                max-width: 600px;
+                max-width: 550px;
                 margin-left: 20px;
             }
         
