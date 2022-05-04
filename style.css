@@ -16,6 +16,13 @@
   box-sizing: border-box;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: 30px;
+}
+
 p {
   font-family: "RobotoR", sans-serif;
   font-size: 17px;
@@ -28,6 +35,10 @@ h1 {
 }
 
 h2 {
+  font-family: "RobotoR", sans-serif;
+}
+
+h3 {
   font-family: "RobotoR", sans-serif;
 }
 
@@ -114,6 +125,84 @@ header .header__top {
   }
   .intro p {
     font-size: 20px;
+  }
+}
+
+.fonction__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fonction__box__item {
+  margin-top: 25px;
+  height: 75px;
+  width: 95%;
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+}
+.fonction__box__item p {
+  margin-left: -10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #9356DC;
+  font-size: 14px;
+}
+.fonction__box__item h3 {
+  margin-left: 20px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.fonction__box__item h3 i {
+  margin-right: 20px;
+  font-size: 22px;
+  color: #666666;
+}
+.fonction__box__item:hover {
+  background-color: #e9ddf8;
+}
+.fonction__box__item:hover i {
+  color: #9356DC;
+}
+@media screen and (min-width: 599px) {
+  .fonction__box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .fonction__box__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .fonction__box__item p {
+    margin: 10px 0px -10px 0px;
+  }
+  .fonction__box__item h3 {
+    display: flex;
+    margin: 0;
+    font-size: 18px;
+  }
+  .fonction__box__item h3 i {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .fonction__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .fonction__box__item {
+    max-width: 600px;
+    margin-left: 20px;
   }
 }
 
