@@ -8,5 +8,6 @@ $cGrisMed: darken($cWhite, 15%);
 $cGrisHard: darken($cWhite, 60%);
 
 $breakpoint: (
-    tablette: 599px
-)
+    tablette: 599px,
+    desktop: 1224px
+);

@@ -8,6 +8,13 @@
     box-shadow: inset 0px -4px 5px -1px $cGrisMed;
 }
 
+@mixin paddingSection {
+
+    padding: 15px;
+    margin-top: 30px;
+    
+}
+
 @mixin btn{
     
     background: rgb(2,0,36);
@@ -34,3 +41,12 @@
         @content;
     }
 }
+
+@mixin desktop-only{
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
+        @content;
+    }
+}
+
+
+
