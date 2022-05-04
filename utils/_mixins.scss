@@ -1,6 +1,12 @@
 @mixin shadow{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+@mixin shadowTitle{
+    box-shadow: 0px 1px 8px -3px #000000;
+}
+@mixin shadowIntroInset{
+    box-shadow: inset 0px -4px 5px -1px $cGrisMed;
+}
 
 @mixin btn{
     
