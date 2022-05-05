@@ -7,10 +7,13 @@
 @mixin shadowIntroInset{
     box-shadow: inset 0px -4px 5px -1px $cGrisMed;
 }
+@mixin shadowBoxResto{
+    box-shadow: $cGrisMed 0px 10px 20px, $cGrisMed 0px 6px 6px;;
+}
 
 @mixin paddingSection {
 
-    padding: 15px;
+    padding: 20px;
     margin-top: 30px;
     
 }
