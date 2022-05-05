@@ -303,4 +303,48 @@ header .header__top {
   }
 }
 
+footer {
+  background-color: #333333;
+  padding: 30px;
+}
+footer p {
+  font-family: "Shrikhand";
+  color: #fff;
+}
+footer .texte p {
+  margin-top: 10px;
+  font-family: "RobotoR";
+  font-size: 12px;
+  font-weight: bold;
+}
+footer .texte p i {
+  margin-right: 15px;
+  width: 10px;
+}
+@media screen and (min-width: 599px) {
+  footer {
+    padding: 30px 100px 30px 100px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  footer .texte {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 60%;
+  }
+  footer .texte p {
+    margin-right: 30px;
+  }
+  footer .footer__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  footer .texte {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
