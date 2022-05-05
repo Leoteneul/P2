@@ -250,6 +250,29 @@ header .header__top {
   object-position: bottom;
   border-radius: 8px 8px 0 0;
 }
+@media screen and (min-width: 599px) {
+  .restaurant__box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .restaurant__box__item {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .restaurant__box {
+    justify-content: space-between;
+  }
+  .restaurant__box__item {
+    width: 45%;
+    height: 300px;
+  }
+  .restaurant__box__item img {
+    object-position: center;
+  }
+}
 
 .split {
   width: 100%;
@@ -273,6 +296,11 @@ header .header__top {
   justify-content: center;
   align-items: flex-start;
   font-size: 24px;
+}
+@media screen and (min-width: 1224px) {
+  .split {
+    padding-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

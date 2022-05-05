@@ -147,12 +147,15 @@
 .restaurant{
     background-color: $cGrisSoft;
     padding-top: 50px;
+    
 }
 .restaurant__box{
     display: flex;
     flex-direction: column;
-    padding-bottom: 50px;
     
+    
+    padding-bottom: 50px;
+        
     
         &__item{
             display: flex;
@@ -188,7 +191,34 @@
                     border-radius: 8px 8px 0 0;
                 }
                 
+                @include desktop-only{
+                    
+                }
                 
+                
+            
+        }
+        @include tablette-only{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+                &__item{
+                    width: 40%; 
+                }
+          
+        }
+        @include desktop-only{
+            justify-content: space-between;
+                &__item{
+                    width: 45%;
+                    height: 300px;
+                    
+
+                    & img{
+                        object-position: center;
+                    }    
+                }
             
         }
 }
@@ -203,7 +233,6 @@
     flex-direction: row;
         &__text{
             width: 80%;
-            // background-color: yellow;
                 & p{
                     color: black;
                 }
@@ -211,11 +240,15 @@
         & i{
             width: 20%;
             height: 100%;
-            // background-color: red;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             font-size: 24px;
+
+        }
+        @include desktop-only{
+
+            padding-top: 30px;
         }
         
 
