@@ -10,6 +10,17 @@
     font-family: 'RobotoR';
     src: url('RobotoR.ttf');
 }
+@keyframes animHeart{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.fa-regular{
+    display: flex;
+}
 *{
     margin: 0;
     padding: 0;
