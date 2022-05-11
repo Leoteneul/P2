@@ -346,6 +346,7 @@ header .header__top {
 
 .emptyHeart {
   display: flex;
+  font-display: none;
   justify-content: center;
   width: 20%;
   position: absolute;
