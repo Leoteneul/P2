@@ -10,6 +10,31 @@
     font-family: 'RobotoR';
     src: url('RobotoR.ttf');
 }
+@keyframes animHeart{
+    from{
+        opacity: 0;
+        background: linear-gradient(70deg,$color-secondary 0%,$color-primary 40%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   
+    }
+    70%{
+        opacity: 1;
+        background: linear-gradient(70deg,$color-secondary 0%,$color-primary 40%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;  
+    }
+    to{
+        opacity: 1;
+        background: linear-gradient(70deg,$color-secondary 40%,$color-primary 60%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+}
+}
+
 *{
     margin: 0;
     padding: 0;
