@@ -13,15 +13,26 @@
 @keyframes animHeart {
   from {
     opacity: 0;
+    background: linear-gradient(70deg, #FF79DA 0%, #9356DC 40%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    opacity: 1;
+    background: linear-gradient(70deg, #FF79DA 0%, #9356DC 40%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   to {
     opacity: 1;
+    background: linear-gradient(70deg, #FF79DA 40%, #9356DC 60%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
-.fa-regular {
-  display: flex;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -307,27 +318,30 @@ header .header__top {
   }
 }
 
-label {
+.labelHeart {
   background-color: #fff;
   width: 20%;
   height: 50%;
   display: flex;
   justify-content: center;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   z-index: 10;
   opacity: 0;
+  cursor: pointer;
 }
-label i {
-  color: #9356DC;
+@media screen and (min-width: 1224px) {
+  .labelHeart:hover {
+    animation: 0.3s animHeart forwards;
+  }
 }
 
-#heart {
+.checkHeart {
   display: none;
 }
 
-#heart:checked + label {
-  animation: 0.3s animHeart forwards;
+.checkHeart:checked + .labelHeart {
+  animation: 1s animHeart forwards;
 }
 
 .emptyHeart {
@@ -338,6 +352,7 @@ label i {
   font-size: 23px;
   z-index: 0;
   right: 0;
+  margin: 1px -1px 0 0;
 }
 
 footer {
