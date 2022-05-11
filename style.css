@@ -66,6 +66,10 @@ h3 {
   font-size: 17px;
 }
 
+.fa-regular {
+  display: flex;
+}
+
 .btn {
   background: rgb(2, 0, 36);
   background: linear-gradient(172deg, rgb(2, 0, 36) 0%, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 56%);
@@ -353,7 +357,7 @@ header .header__top {
   font-size: 23px;
   z-index: 0;
   right: 0;
-  margin: 1px -1px 0 0;
+  margin: 2px -2px 0 0;
 }
 
 footer {
