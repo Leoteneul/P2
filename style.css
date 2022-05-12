@@ -13,6 +13,7 @@
 @keyframes animHeart {
   from {
     opacity: 0;
+    display: none;
     background: linear-gradient(70deg, #FF79DA 0%, #9356DC 40%);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -66,8 +67,9 @@ h3 {
   font-size: 17px;
 }
 
-.fa-regular {
-  display: flex;
+a {
+  color: unset;
+  text-decoration: unset;
 }
 
 .btn {
@@ -350,14 +352,13 @@ header .header__top {
 
 .emptyHeart {
   display: flex;
-  font-display: none;
   justify-content: center;
   width: 20%;
   position: absolute;
   font-size: 23px;
   z-index: 0;
   right: 0;
-  margin: 2px -4px 0 0;
+  margin: 2px -2px 0 0;
 }
 
 footer {

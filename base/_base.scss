@@ -13,6 +13,7 @@
 @keyframes animHeart{
     from{
         opacity: 0;
+        display: none;
         background: linear-gradient(70deg,$color-secondary 0%,$color-primary 40%);
         background-clip: border-box;
         -webkit-background-clip: text;
@@ -47,3 +48,4 @@ section{
     // background-color: hotpink;
     @include paddingSection;
 }
+
