@@ -12,30 +12,65 @@
 
 .bigMenu{
     display: flex;
-    height: 600px;
+    flex-direction: column;
     width: 100%;
-    padding: 20px;
+    
     margin-top: -50px;
-    border-radius: 25px;
+    border-radius: 25px 25px 0 0;
     background-color: $cGrisSoft;
     
-    z-index: 5;
-        &_top{
-            width: 100%;
+        &__top{
             display: flex;
-            background-color: yellow;
-            
-            
-                &_like{
-                    
-                    
-                    
-                }
+            width: 100%;
+            padding: 20px 20px 10px 20px;
                 & h1{
                     width: 80%;
+                    font-size: 28px;
                     
+                }
+
+                & .heartabso{
+                    padding-left: 30px;
+                    display: flex;
+                    align-items: center;
                 }
         }
     
 }
 
+
+.menu{
+        margin-top: 20px;
+        & .menuName{
+            padding: 0 20px 0 20px;
+            
+        }
+}
+
+.menuBox{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 10px 10px ;
+
+        &__item{
+            height: 70px;
+            width: 100%;
+            margin-top: 15px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            background-color: $cWhite;
+            border-radius: 15px;
+            @include shadowBoxResto;
+
+                &__price{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    padding-right: 5px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    
+                }
+        }
+}

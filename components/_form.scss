@@ -5,6 +5,7 @@
     justify-content: center;
     // background-color: blueviolet;
     width: 20%;
+    
 }
 
 .labelHeart{
@@ -71,4 +72,12 @@
     font-weight: 900;
     letter-spacing: 0.5px;
     @include shadow;
+}
+
+
+
+.trait{
+    width: 45px;
+    margin: 5px 0 0 20px ;
+    border-top: 4px solid darken($color-tertiary, 15%);
 }

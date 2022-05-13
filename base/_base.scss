@@ -42,10 +42,5 @@
     box-sizing: border-box;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    // background-color: hotpink;
-    @include paddingSection;
-}
+
 

@@ -40,13 +40,6 @@
   box-sizing: border-box;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  margin-top: 30px;
-}
-
 p {
   font-family: "RobotoR", sans-serif;
   font-size: 17px;
@@ -164,6 +157,13 @@ header .header__top {
   padding: 10px 0 10px 0;
   box-shadow: 0px 1px 8px -3px #000000;
   z-index: 5;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 30px;
 }
 
 .localisation {
