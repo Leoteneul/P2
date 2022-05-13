@@ -151,6 +151,7 @@
     display: flex;
     flex-direction: column;
     
+
     
     padding-bottom: 50px;
         
@@ -159,10 +160,10 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            height: 250px;
+            height: 200px;
             margin-top: 20px;
-            @include shadowBoxResto;
             border-radius: 8px;
+            @include shadowBoxResto;
                 & .newAbso{
                     position: absolute;
                     height: 28px;
@@ -181,7 +182,7 @@
                     @include shadow;
                 }
                 & img{
-                    height: 70%;
+                    height: 100%;
                     width: 100%;
                     object-fit: cover;
                     object-position: bottom;
@@ -222,11 +223,11 @@
 
 .split{
     width: 100%;
-    height: 30%;
+    height: 40%;
     background-color: white;
-    padding: 20px 0 0 15px;
+    // padding: 20px 0 0 15px;
     border-radius: 0 0 8px 8px;
-    position: relative;
+    
     display: flex;
     flex-direction: row;
         &__text{
@@ -249,46 +250,7 @@
 
 
 
-.labelHeart{
-    background-color: $cWhite;
-    width: 20%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    font-size: 26px;
-    font-weight: bold;
-    z-index: 10;
-    opacity: 0;
-    cursor: pointer;
-    @include desktop-only{
-        &:hover{
 
-            animation: 0.3s animHeart forwards;
-            
-        }
-    }
-    
-}
-.checkHeart{
-    display: none;
-    
-}
-.checkHeart:checked + .labelHeart{
-    animation: 1s animHeart forwards;
-        
-    
-}
-.emptyHeart{
-    display: flex;
-    
-    justify-content: center;
-    width: 20%;
-    position: absolute;
-    font-size: 23px;
-    z-index: 0;
-    right: 0;
-    margin: 2px -2px 0 0
 
-}
 
 
