@@ -1,0 +1,74 @@
+.heartabso{
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    // background-color: blueviolet;
+    width: 20%;
+}
+
+.labelHeart{
+    background-color: $cWhite;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: bold;
+    z-index: 10;
+    opacity: 0;
+    cursor: pointer;
+    @include desktop-only{
+        &:hover{
+
+            animation: 0.3s animHeart forwards;
+            
+        }
+    }
+    
+}
+
+.checkHeart{
+    display: none;
+    
+}
+.checkHeart:checked + .labelHeart{
+    animation: 1s animHeart forwards;
+        
+    
+}
+.emptyHeart{
+    display: flex;
+    position: absolute;
+    font-size: 27px;
+    z-index: 0;
+    
+    
+    
+    
+
+}
+
+
+
+
+
+
+
+.newAbso{
+    position: absolute;
+    height: 28px;
+    width: 85px;
+    top: 15px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 33%);
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    @include shadow;
+}

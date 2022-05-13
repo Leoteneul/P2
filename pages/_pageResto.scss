@@ -1,3 +1,41 @@
-p{
-    color: blueviolet;
+.imgResto{
+    
+    height: 250px;
+    width: 100%;
+    z-index: -1;
+    & img{
+        height: 100%;
+        width: 100%;
+        
+    }
 }
+
+.bigMenu{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    padding: 20px;
+    margin-top: -50px;
+    border-radius: 25px;
+    background-color: $cGrisSoft;
+    
+    z-index: 5;
+        &_top{
+            width: 100%;
+            display: flex;
+            background-color: yellow;
+            
+            
+                &_like{
+                    
+                    
+                    
+                }
+                & h1{
+                    width: 80%;
+                    
+                }
+        }
+    
+}
+
