@@ -42,5 +42,26 @@
     box-sizing: border-box;
 }
 
+@keyframes testmargin{
+    from{
+       width: 0; 
+    }
+
+    to{
+      width: 70px;  
+    }
+}
+
+@keyframes rotateI{
+    from{
+        width: 0;
+        transform: rotate(0);
+    }
+    
+    to{
+        transform: rotate(1turn);
+        width: 40px;
+    }
+}
 
 
