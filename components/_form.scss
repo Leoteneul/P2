@@ -4,10 +4,9 @@
     display: flex;
     justify-content: center;
     // background-color: blueviolet;
-    width: 20%;
+    
     
 }
-
 .labelHeart{
     background-color: $cWhite;
     width: 100%;
@@ -28,7 +27,6 @@
     }
     
 }
-
 .checkHeart{
     display: none;
     
@@ -56,6 +54,8 @@
 
 
 
+
+
 .newAbso{
     position: absolute;
     height: 28px;
@@ -76,8 +76,73 @@
 
 
 
+
+
+
+
+
 .trait{
     width: 45px;
     margin: 5px 0 0 20px ;
     border-top: 4px solid darken($color-tertiary, 15%);
+}
+
+
+
+
+
+
+
+
+
+
+.itemSelect{
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-right: 0px;
+    border-radius: 0 8px 8px 0;
+    
+}
+.active{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;      
+}
+.active:checked + .activeLabel{
+    animation: testmargin 1s forwards;
+        & .check{
+            animation: rotateI 0.8s forwards;
+        }
+}
+
+@include desktop-only{
+
+    .active:hover + .activeLabel{
+        animation: testmargin 1s forwards;
+            
+            & .check{
+                animation: rotateI 0.8s forwards;
+            }
+    }
+}
+.activeLabel{
+    height: 100%;
+    background-color: $color-tertiary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check{
+    width: 0;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
 }

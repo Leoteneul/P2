@@ -31,7 +31,17 @@
     padding: 14px 25px 14px 25px;
     margin-top: 10px;
     font-family: 'RobotoR';
-    font-size: 15px;
+    font-size: 17px;
+        &--small{
+            margin-top: 40px;
+            width: 50%;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+                @include desktop-only{
+                    width: 20%
+                }
+        }
     @include shadow;
     @include tablette-only{
         padding: 17px 40px 17px 40px;

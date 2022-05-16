@@ -64,4 +64,32 @@
     }
 }
 
+@keyframes apparition{
+    
+    from{
+        transform: translate(0, 320px);
+        
+    }
+
+    
+
+    to{
+        
+        transform: translate(0, 0);
+        
+        
+    }
+}
+
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
 

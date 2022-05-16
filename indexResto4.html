@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P3</title>
+  <link rel="stylesheet" href="styleResto.css">
+  <script src="https://kit.fontawesome.com/aceb4c19ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>          <!-- LOGO + IMG RESTO -->
+
+      <div class="header__top">
+        <h1>ohmyfood</h1>
+        <a href="accueil.html"><i class="fa-solid fa-arrow-left accueilArrow"></i></a>
+      </div>
+      <div class="imgResto">
+        <img src="images/resto 4.jpg" alt="image du resto">
+      </div>
+    </header>
+
+
+
+    <div class="bigMenu">
+      
+       <div class="bigMenu__top">         <!-- TITRE RESTO + COEUR -->
+        <h1>Le délice des sens </h1>
+        <div class="heartabso">
+          <input type="checkbox" class="checkHeart" id="heart4">
+          <label for="heart4" class="labelHeart">
+      
+            <i class="fa-solid fa-heart"></i>
+
+          </label>
+          <i class="fa-regular fa-heart emptyHeart"></i>
+        </div>
+      </div>
+
+
+      
+      <div id="allMenu">
+
+        <section class="menu">
+        
+          <p class="menuName">ENTREES</p>
+          <div class="trait"></div>
+
+          <div class="menuBox">                 <!-- BOX ITEMS ENTREE -->
+
+
+            <div class="menuBox__item">                       <!-- Item1 -->
+              <div class="menuBox__item__tag">
+                <h3>Tartare de thon</h3>
+                <p>Assaisonné au yuzu</p>
+              </div>
+              
+              <p class="menuBox__item__price">25€</p>
+              
+              <div class="itemSelect">
+                <input type="checkbox" id="activeEntree1" class="active">
+                <label for="activeEntree1" class="activeLabel">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="menuBox__item">                       <!-- Item2 -->
+              <div class="menuBox__item__tag">
+                <h3>Bouchée de homard croustillant</h3>
+                <p>Et sa farandole de petits légume</p>
+              </div>
+              
+              <p class="menuBox__item__price">35€</p>
+              
+              <div class="itemSelect">
+                <input type="checkbox" id="activeEntree2" class="active">
+                <label for="activeEntree2" class="activeLabel">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="menuBox__item">                       <!-- Item3 -->
+              <div class="menuBox__item__tag">
+                <h3>Velouté de cèpes</h3>
+                <p>Aux truffes</p>
+              </div>
+              
+              <p class="menuBox__item__price">20€</p>
+              
+              <div class="itemSelect">
+                <input type="checkbox" id="activeEntree3" class="active">
+                <label for="activeEntree3" class="activeLabel">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section class="menu">
+
+          <p class="menuName">PLATS</p>
+          <div class="trait"></div>
+          <div class="menuBox">                   <!-- BOX ITEMS PLAT -->
+            
+            
+            <div class="menuBox__item">                       <!-- Item1 -->
+              <div class="menuBox__item__tag">
+                <h3>Poulet rôti aux herbes de <br> provence</h3>
+                <p>Et sa crème de truffe</p>
+              </div>
+              
+              <p class="menuBox__item__price">40€</p>
+              
+              <div class="itemSelect">
+                <input type="checkbox" id="activeEntree4" class="active">
+                <label for="activeEntree4" class="activeLabel">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="menuBox__item">                       <!-- Item2 -->
+              <div class="menuBox__item__tag">
+                <h3>Langouste rôtie</h3>
+                <p>Et ses légumes de saison</p>
+              </div>
+              
+              <p class="menuBox__item__price">35€</p>
+              
+              <div class="itemSelect">
+                <input type="checkbox" id="activeEntree5" class="active">
+                <label for="activeEntree5" class="activeLabel">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="menuBox__item">                       <!-- Item3 -->
+              <div class="menuBox__item__tag">
+                <h3>Côte de boeuf angus</h3>
+                <p>Et sa purée de panais</p>
+              </div>
+              
+              <p class="menuBox__item__price">44€</p>
+              
+              <div class="itemSelect">
+                <input type="checkbox" id="activeEntree6" class="active">
+                <label for="activeEntree6" class="activeLabel">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+        <section class="menu">
+
+          <p class="menuName">DESSERTS</p>
+          <div class="trait"></div>
+
+          <div class="menuBox">                 <!-- BOX ITEMS DESSERTS -->
+
+
+            <div class="menuBox__item">                       <!-- Item1 -->
+              <div class="menuBox__item__tag">
+                <h3>Farandole de desserts</h3>
+                <p>Du chef</p>
+              </div>
+              
+              <p class="menuBox__item__price">18€</p>
+              
+              <div class="itemSelect">
+                <input type="checkbox" id="activeEntree7" class="active">
+                <label for="activeEntree7" class="activeLabel">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="menuBox__item">                       <!-- Item2 -->
+              <div class="menuBox__item__tag">
+                <h3>Crèmes brulée</h3>
+                <p>Revisitée</p>
+              </div>
+              
+              <p class="menuBox__item__price">22€</p>
+              
+              <div class="itemSelect">
+                <input type="checkbox" id="activeEntree8" class="active">
+                <label for="activeEntree8" class="activeLabel">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="menuBox__item">                       <!-- Item3 -->
+              <div class="menuBox__item__tag">
+                <h3>Tiramisu</h3>
+                <p>À la noisette</p>
+              </div>
+              
+              <p class="menuBox__item__price">23€</p>
+              
+              <div class="itemSelect">
+                <input type="checkbox" id="activeEntree9" class="active">
+                <label for="activeEntree9" class="activeLabel">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+      </div>
+      <button class="btn btn--small">Commander</button>
+    </div>
+
+
+
+       <footer>     <!-- FOOTER -->
+        <p class="footer__title">ohmyfood</p>
+        <div class="texte">
+          <p><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p>
+          <p><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p>
+          <p>Mentions légales</p>
+          <p>Contact</p>
+        </div>
+      </footer>
+</body>
+</html>
