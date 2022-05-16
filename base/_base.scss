@@ -35,7 +35,13 @@
     left: 0;
         & img{
             height: 15%;
-            width: 8%;
+            width: 30%;
+            @include tablette-only{
+                width: 20%;
+            }
+            @include desktop-only{
+                width: 8%;
+            }
         }
 }
 

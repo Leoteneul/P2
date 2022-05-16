@@ -33,7 +33,17 @@
 }
 #loadingScreen img {
   height: 15%;
-  width: 8%;
+  width: 30%;
+}
+@media screen and (min-width: 599px) {
+  #loadingScreen img {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1224px) {
+  #loadingScreen img {
+    width: 8%;
+  }
 }
 
 .progress {
