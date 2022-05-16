@@ -10,6 +10,23 @@
   font-family: "RobotoR";
   src: url("RobotoR.ttf");
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#loadingScreen {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 80;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+}
+
 @keyframes animHeart {
   from {
     opacity: 0;
@@ -34,12 +51,6 @@
     -webkit-text-fill-color: transparent;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @keyframes testmargin {
   from {
     width: 0;
