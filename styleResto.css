@@ -20,11 +20,47 @@
   height: 100%;
   width: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   z-index: 80;
   opacity: 0.9;
+  animation: loading 3s forwards ease-in-out;
   top: 0;
   left: 0;
+}
+#loadingScreen img {
+  height: 15%;
+  width: 30%;
+}
+@media screen and (min-width: 599px) {
+  #loadingScreen img {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1224px) {
+  #loadingScreen img {
+    width: 8%;
+  }
+}
+
+.progress {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 4px;
+  border: 5px solid #4d4d4d;
+}
+.progress__bar {
+  background-color: #99E2D0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  transform: scaleX(0);
+  transform-origin: 0%;
+  animation: loadingBar 2s forwards;
 }
 
 @keyframes animHeart {
@@ -66,7 +102,7 @@
   }
   to {
     transform: rotate(1turn);
-    width: 40px;
+    width: 100%;
   }
 }
 @keyframes apparition {
@@ -83,6 +119,23 @@
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes loading {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes loadingBar {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
   }
 }
 p {
