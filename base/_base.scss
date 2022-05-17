@@ -95,6 +95,8 @@
 }
 }
 
+
+
 @keyframes testmargin{
     from{
        width: 0; 
@@ -105,17 +107,20 @@
     }
 }
 
+
+
 @keyframes rotateI{
     from{
         width: 0;
         transform: rotate(0);
     }
-    
     to{
         transform: rotate(1turn);
-        width: 100%;
+        width: 28px;
     }
 }
+
+
 
 @keyframes apparition{
     
