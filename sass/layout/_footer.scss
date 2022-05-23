@@ -2,12 +2,12 @@ footer{
     background-color: lighten($cBlack, 20%);
     padding: 30px;
 
-        & p{
+        & p, a{
             font-family: 'Shrikhand';
             color: $cWhite;
         }
 
-        & .texte p{
+        & .texte p, a{
             margin-top: 10px;
             font-family: 'RobotoR';
             font-size: 12px;

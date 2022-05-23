@@ -533,17 +533,17 @@ footer {
   background-color: #333333;
   padding: 30px;
 }
-footer p {
+footer p, footer a {
   font-family: "Shrikhand";
   color: #fff;
 }
-footer .texte p {
+footer .texte p, footer a {
   margin-top: 10px;
   font-family: "RobotoR";
   font-size: 12px;
   font-weight: bold;
 }
-footer .texte p i {
+footer .texte p i, footer a i {
   margin-right: 15px;
   width: 10px;
 }
