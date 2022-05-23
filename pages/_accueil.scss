@@ -7,6 +7,7 @@ section{
 }
 
 
+// BOUTON + TXT LOCALISATION
 .localisation{
     display: flex;
     justify-content: center;
@@ -20,15 +21,14 @@ section{
             align-items: center;
             margin-right: 10px;
         }
-        @include tablette-only{
+    @include tablette-only{
             
-            background-color: $cGrisSoft;
-        }
+        background-color: $cGrisSoft;
+    }
 }
 
 
-
-
+// PRESENTATION RESTO
 .intro{
     display: flex;
     flex-direction: column;
@@ -38,32 +38,31 @@ section{
     width: 100%;
     padding: 30px 0 50px 0;
     
-    & h2{
-        padding: 0px 50px 0 50px;
-    }
+        & h2{
+            padding: 0px 50px 0 50px;
+        }
 
-    & p{
-        padding: 15px;
-    }
+        & p{
+            padding: 15px;
+        }
 
     @include tablette-only{
-        width: 100%;
-        @include shadowIntroInset;
-            & h2{
-                font-size: 30px;
-            }
+    width: 100%;
+    @include shadowIntroInset;
+        & h2{
+            font-size: 30px;
+        }
 
-            & p{
-                font-size: 20px;
-            }
+        & p{
+             font-size: 20px;
+        }
 
     }
 }
 
 
 
-
-
+// SECTION FONCTION
 .fonction__box{
     display: flex;
     flex-direction: column;
@@ -105,6 +104,7 @@ section{
                     }
                         
             }
+
             &:hover{
                 background-color: lighten($color-primary, 32%);
                     & i{
@@ -113,6 +113,8 @@ section{
             }
                    
     }
+
+// SECTION FONCTIONBOX TABLETTE DESKTOP
     @include tablette-only{
         display: flex;
         flex-wrap: wrap;
@@ -121,10 +123,11 @@ section{
             &__item{
                 display: flex;
                 flex-direction: column-reverse;
+
                     & p{
                         margin: 10px 0px -10px 0px;
-                        
                     }
+
                     & h3{
                         display: flex;
                         margin: 0;
@@ -133,12 +136,10 @@ section{
                             & i{
                                 font-size: 22px;
                             }
-
                     }
             }
     }
     @include desktop-only{
-        
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -153,8 +154,7 @@ section{
 
 
 
-
-
+// SECTION RESTAURANT
 .restaurant{
     background-color: $cGrisSoft;
     padding-top: 50px;
@@ -165,65 +165,72 @@ section{
     display: flex;
     flex-direction: column;
     
-    &__item{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        margin-top: 20px;
-        background-color: $cWhite;
-        border-radius: 15px;
-        height: 250px;
-        width: 100%;
-        @include shadowBoxResto;
-            & img{
-                height: 70%;
-                object-fit: cover;
-                object-position: center;
-                border-radius: 15px 15px 0 0;
-            }
-            & .split{
-                display: flex;
-                justify-content: space-between;
-                height: 30%;
-                padding: 16px;
-
-                & h3{
-                    margin-bottom: 2px;
-                }
-            }
-
-            
-    }
-    
-    @include tablette-only{
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
         &__item{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: 20px;
+            background-color: $cWhite;
+            border-radius: 15px;
+            height: 250px;
+            width: 100%;
+            @include shadowBoxResto;
+
+                & a{
+                    position: absolute;
+                    height: 70%;
+                    width: 100%;
+                }
+
+                & img{
+                    height: 70%;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 15px 15px 0 0;
+                }
+                & .split{
+                    display: flex;
+                    justify-content: space-between;
+                    height: 30%;
+                    padding: 16px;
+
+                    & h3{
+                        margin-bottom: 2px;
+                    }
+                }
+
                 
-                width: 45%;
-                
-            
         }
-    }
-    @include desktop-only{
-        justify-content: space-evenly;
-        margin-top: 30px;
-        padding-bottom: 40px;
+// RESTAURANTBOX TABLETTE DESKTOP       
+        @include tablette-only{
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
             &__item{
-                margin-top: 40px;
-                width: 40%;
-                height: 300px;
-
-                    & img{
-                        object-position: center;
-                    }
-
-                    & .split{
-                        padding: 25px;
-                    }
+                    
+                    width: 45%;
+                    
+                
             }
-    }
+        }
+        @include desktop-only{
+            justify-content: space-evenly;
+            margin-top: 30px;
+            padding-bottom: 40px;
+                &__item{
+                    margin-top: 40px;
+                    width: 40%;
+                    height: 300px;
+
+                        & img{
+                            object-position: center;
+                        }
+
+                        & .split{
+                            padding: 25px;
+                        }
+                }
+        }
 }
 
 

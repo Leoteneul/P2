@@ -16,6 +16,42 @@
   box-sizing: border-box;
 }
 
+@keyframes apparition {
+  from {
+    transform: translate(0, 320px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes loadingBar {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
 #loadingScreen {
   height: 100%;
   width: 100%;
@@ -32,17 +68,17 @@
   left: 0;
 }
 #loadingScreen img {
-  height: 15%;
-  width: 30%;
+  height: 30%;
+  width: 50%;
 }
 @media screen and (min-width: 599px) {
   #loadingScreen img {
-    width: 20%;
+    width: 40%;
   }
 }
 @media screen and (min-width: 1224px) {
   #loadingScreen img {
-    width: 8%;
+    width: 16%;
   }
 }
 
@@ -102,40 +138,7 @@
   }
   to {
     transform: rotate(1turn);
-    width: 40px;
-  }
-}
-@keyframes apparition {
-  from {
-    transform: translate(0, 320px);
-  }
-  to {
-    transform: translate(0, 0);
-  }
-}
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes loading {
-  from {
-    opacity: 0.9;
-  }
-  to {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-@keyframes loadingBar {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
+    width: 28px;
   }
 }
 p {
@@ -272,6 +275,7 @@ a {
   font-size: 28px;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .btn {
@@ -476,6 +480,11 @@ section {
   width: 100%;
   box-shadow: #d9d9d9 0px 10px 20px, #d9d9d9 0px 6px 6px;
 }
+.restaurant__box__item a {
+  position: absolute;
+  height: 70%;
+  width: 100%;
+}
 .restaurant__box__item img {
   height: 70%;
   object-fit: cover;
@@ -548,7 +557,8 @@ footer .texte p i {
     display: flex;
     flex-wrap: wrap;
     height: 80%;
-    width: 60%;
+    width: 100%;
+    justify-content: center;
   }
   footer .texte p {
     margin-right: 30px;
@@ -557,10 +567,6 @@ footer .texte p i {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-  }
-  footer .texte {
-    width: 100%;
-    justify-content: center;
   }
 }
 

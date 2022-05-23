@@ -1,15 +1,18 @@
 footer{
     background-color: lighten($cBlack, 20%);
     padding: 30px;
+
         & p{
             font-family: 'Shrikhand';
             color: $cWhite;
         }
+
         & .texte p{
             margin-top: 10px;
             font-family: 'RobotoR';
             font-size: 12px;
             font-weight: bold;
+
                 & i{
                     margin-right: 15px;
                     width: 10px;
@@ -17,28 +20,24 @@ footer{
                 }       
         }
     
-        @include tablette-only{
-            padding: 30px 100px 30px 100px;
+    @include tablette-only{
+    padding: 30px 100px 30px 100px;
+    display: flex;
+    flex-direction: column-reverse;
+        & .texte{
             display: flex;
-            flex-direction: column-reverse;
-                & .texte{
-                    display: flex;
-                    flex-wrap: wrap;
-                    height: 80%;
-                    width: 60%;
-                        & p{
-                            margin-right: 30px;
-                        }
-                }
-                & .footer__title{
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 20px;
-                }
-                & .texte{
-                    width: 100%;
-                    justify-content: center;
+            flex-wrap: wrap;
+            height: 80%;
+            width: 100%;
+            justify-content: center;
+                & p{
+                    margin-right: 30px;
                 }
         }
-        
+        & .footer__title{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }        
 }

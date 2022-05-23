@@ -1,12 +1,10 @@
+// FORME COEUR l126(base/base/ANIMATION COEUR)
 .heartabso{
-    
     position: relative;
     display: flex;
-    justify-content: center;
-    // background-color: blueviolet;
-    
-    
+    justify-content: center;   
 }
+
 .labelHeart{
     background-color: $cWhite;
     width: 100%;
@@ -27,35 +25,24 @@
     }
     
 }
+
 .checkHeart{
-    display: none;
-    
+    display: none;  
 }
+
 .checkHeart:checked + .labelHeart{
-    animation: 1s animHeart forwards;
-        
-    
+    animation: 1s animHeart forwards;  
 }
+
 .emptyHeart{
     display: flex;
     position: absolute;
     font-size: 27px;
     z-index: 0;
-    
-    
-    
-    
-
 }
 
 
-
-
-
-
-
-
-
+//PASTILLE NOUVEAU SUR ITEMS RESTO
 .newAbso{
     position: absolute;
     height: 28px;
@@ -75,12 +62,7 @@
 }
 
 
-
-
-
-
-
-
+//TRAITS RESTO MENU
 .trait{
     width: 45px;
     margin: 5px 0 0 20px ;
@@ -88,14 +70,7 @@
 }
 
 
-
-
-
-
-
-
-
-
+//SELECTION RESTO MENU l154(base/base/ANIMATION SELECTION)
 .itemSelect{
     background-color: salmon;
     display: flex;

@@ -8,24 +8,31 @@
   <script src="https://kit.fontawesome.com/aceb4c19ab.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="loadingScreen">
+
+
+    <div id="loadingScreen">    <!--PAGE DE CHARGEMENT + LOGO FOURCHETTE-->
+
       <img src="images/fourchette.png" alt="fourchette chargement">
+
       <div class="progress">
         <div class="progress__bar"></div>
       </div>
+
     </div>
+
+
     <header>
 
-      <div class="header__top">
+      <div class="header__top">   <!--TITRE-->
         <h1>ohmyfood</h1>
       </div>
       
-      <div class="localisation">
+      <div class="localisation">    <!--BOUTON + TXT LOCALISATION-->
         <i class="fa-solid fa-location-dot localisation__localdot"></i>
         <p>Paris, Belleville</p>
       </div>
 
-      <div class="intro">
+      <div class="intro">     <!--PRESENTATION RESTO-->
         <h2>Réservez le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
         <button class="btn">Explorer nos restaurants</button>
@@ -35,44 +42,49 @@
 
 
     <section class="fonction">
+
         <h2>Fonctionnement</h2>
-        <div class="fonction__box">
-          <div class="fonction__box__item">
+        <div class="fonction__box">     <!--SECTION FONCTION-->
+
+          <div class="fonction__box__item">     <!--ETAPE 1-->
             <p>1</p>
             <h3>
               <i class="fa-solid fa-mobile-screen-button"></i>
               Choisissez un restaurant
             </h3>
           </div>
-          <div class="fonction__box__item">
+
+          <div class="fonction__box__item">     <!--ETAPE 2-->
             <p>2</p>
             <h3>
               <i class="fa-solid fa-list"></i>
               Composez votre menu
             </h3>
           </div>
-          <div class="fonction__box__item">
+
+          <div class="fonction__box__item">     <!--ETAPE 3-->
             <p>3</p>
             <h3>
               <i class="fa-solid fa-store"></i>
               Dégustez au restaurant
             </h3>
           </div>
+
         </div>
+      
       </section>
 
       
-      <section class="restaurant">
+      <section class="restaurant">  <!--SECTION RESTAURANT-->
+
         <h2>Restaurants</h2>
         <div class="restaurant__box">
           
-
-          <a href="indexResto1.html" class="restaurant__box__item">
-              
+          <div class="restaurant__box__item">     <!--ITEM RESTO 1-->
+            <a href="indexResto1.html"></a>
             <p class="newAbso">Nouveau</p>
+            <img src="images/resto1.jpg" alt="duo de saumons">
 
-            <img src="images/resto 1.jpg" alt="">
-            
             <div class="split">
 
               <div class="split__text">
@@ -80,25 +92,22 @@
                 <p>Ménilmontant</p>
               </div>
 
-                
               <div class="heartabso">
                 <input type="checkbox" class="checkHeart" id="heart1">
                 <label for="heart1" class="labelHeart">
-            
                   <i class="fa-solid fa-heart"></i>
-
                 </label>
                 <i class="fa-regular fa-heart emptyHeart"></i>
               </div>
-            </div>
-          
-           </a>
-           <a href="indexResto2.html" class="restaurant__box__item">
-              
-            <p class="newAbso">Nouveau</p>
 
-            <img src="images/resto 2.jpg" alt="">
-            
+            </div>
+          </div>
+
+          <div class="restaurant__box__item">     <!--ITEM RESTO 2-->
+            <a href="indexResto2.html"></a>
+            <p class="newAbso">Nouveau</p>
+            <img src="images/resto2.jpg" alt="poulet olives et pommes noisette">
+
             <div class="split">
 
               <div class="split__text">
@@ -106,24 +115,20 @@
                 <p>Charonne</p>
               </div>
 
-                
               <div class="heartabso">
                 <input type="checkbox" class="checkHeart" id="heart2">
                 <label for="heart2" class="labelHeart">
-            
                   <i class="fa-solid fa-heart"></i>
-
                 </label>
                 <i class="fa-regular fa-heart emptyHeart"></i>
               </div>
+
             </div>
           
-           </a>
-           <a href="indexResto3.html" class="restaurant__box__item">
-              
-            
-
-            <img src="images/resto 3.jpg" alt="">
+          </div>
+           <div class="restaurant__box__item">    <!--ITEM RESTO 3-->
+            <a href="indexResto3.html"></a>
+            <img src="images/resto3.jpg" alt="oeufs sur de la salade et du pain">
             
             <div class="split">
 
@@ -132,59 +137,55 @@
                 <p>Cité rouge</p>
               </div>
 
-                
               <div class="heartabso">
                 <input type="checkbox" class="checkHeart" id="heart3">
                 <label for="heart3" class="labelHeart">
-            
                   <i class="fa-solid fa-heart"></i>
-
                 </label>
                 <i class="fa-regular fa-heart emptyHeart"></i>
               </div>
+
             </div>
           
-           </a>
-           <a href="indexResto4.html" class="restaurant__box__item">
-              
-            
-
-            <img src="images/resto 4.jpg" alt="">
-            
-            <div class="split">
-
-              <div class="split__text">
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
-              </div>
-
-                
-              <div class="heartabso">
-                <input type="checkbox" class="checkHeart" id="heart4">
-                <label for="heart4" class="labelHeart">
-            
-                  <i class="fa-solid fa-heart"></i>
-
-                </label>
-                <i class="fa-regular fa-heart emptyHeart"></i>
-              </div>
-            </div>
-          
-           </a>
-           
-           
           </div>
+
+           <div class="restaurant__box__item">    <!--ITEM RESTO 4-->
+              <a href="indexResto4.html"></a>
+              <img src="images/resto4.jpg" alt="assortiments de poissons et légumes">
+            
+              <div class="split">
+
+                <div class="split__text">
+                  <h3>Le délice des sens</h3>
+                  <p>Folie-Méricourt</p>
+                </div>
+
+                  
+                <div class="heartabso">
+                  <input type="checkbox" class="checkHeart" id="heart4">
+                  <label for="heart4" class="labelHeart">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+                  <i class="fa-regular fa-heart emptyHeart"></i>
+                </div>
+
+              </div>
+          </div>
+           
+        </div>
           
         
       </section>
 
-      <footer>
+       <footer>  <!--FOOTER -->
         <p class="footer__title">ohmyfood</p>
         <div class="texte">
+
           <p><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p>
           <p><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p>
           <p>Mentions légales</p>
           <p>Contact</p>
+
         </div>
       </footer>
 </body>

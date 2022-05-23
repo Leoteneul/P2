@@ -11,6 +11,8 @@
     box-shadow: $cGrisMed 0px 10px 20px, $cGrisMed 0px 6px 6px;;
 }
 
+
+
 @mixin paddingSection {
 
     padding: 20px;
@@ -18,6 +20,8 @@
     
 }
 
+
+// BOUTON GRADIANT
 @mixin btn{
     
     background: rgb(2,0,36);
@@ -32,6 +36,7 @@
     margin-top: 10px;
     font-family: 'RobotoR';
     font-size: 17px;
+    @include shadow;
         &--small{
             margin-top: 40px;
             width: 50%;
@@ -42,12 +47,15 @@
                     width: 20%
                 }
         }
-    @include shadow;
-    @include tablette-only{
-        padding: 17px 40px 17px 40px;
-        font-size: 20px;
-    }
+    
+        @include tablette-only{
+            padding: 17px 40px 17px 40px;
+            font-size: 20px;
+        }
 }
+
+
+// BREAKPOINT MEDIA QUERIES
 
 @mixin tablette-only{
     @media screen and (min-width: map-get($breakpoint, tablette)) {

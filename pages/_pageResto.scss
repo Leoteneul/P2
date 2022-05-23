@@ -9,9 +9,8 @@
 
 
 
-
+// IMG COUV RESTO
 .imgResto{
-    
     height: 250px;
     width: 100%;
     z-index: -1;
@@ -19,18 +18,16 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
-            
-            
         }
         
-        @include tablette-only{
-            height: 450px;
-                & img{
-                    
-                    object-position: center;
-                }
+@include tablette-only{
+    height: 450px;
+        & img{
+            object-position: center;
         }
 }
+}
+
 
 .bigMenu{
     display: flex;
@@ -43,11 +40,12 @@
     background-color: $cGrisSoft;
     column-count: 1;
     
-        &__top{
+        &__top{     // NOM RESTO + HEART
             display: flex;
             justify-content: space-between;
             width: 100%;
             padding: 20px 20px 10px 20px;
+
                 & h1{
                     
                     font-size: 28px;
@@ -60,20 +58,15 @@
                     align-items: center;
                 }
 
-                @include desktop-only{
-                    padding: 30px 20px 10px 70px;
-                    justify-content: start;
-                        & h1{
-                            font-size: 34px;
-                            
-                        }
-
-                        
-                }
+        @include desktop-only{
+            padding: 30px 20px 10px 70px;
+            justify-content: start;
+                & h1{
+                    font-size: 34px;
+                    
+                }     
         }
-
-        
-    
+        }   
 }
 
 
@@ -84,20 +77,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        & .menuName{
-            padding: 0 20px 0 20px;
-            
-            
-        }
+
+            & .menuName{
+                padding: 0 20px 0 20px;
+            }
 }
 
-#allMenu{
-    
-    @include desktop-only{
-        display: flex;
-        flex-direction: row;
-        padding: 30px 50px 50px 50px;
-    } 
+#allMenu{  
+@include desktop-only{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 50px 50px 50px;
+} 
 }
 
 .menuBox{
@@ -106,20 +97,13 @@
     animation: apparition 1.5s forwards ease-out;
     display: flex;
     flex-direction: column;
-    
     padding: 0 10px 0px 10px ;
-    
-    
-    
-    
-    
 
-        @include desktop-only{
-            justify-content: space-between;
-        }
-
-        
-        &__item{
+@include desktop-only{
+    justify-content: space-between;
+}
+  
+        &__item{    //PLATS
             opacity: 0;
             width: 100%;
             margin-top: 15px;
@@ -129,29 +113,24 @@
             background-color: $cWhite;
             border-radius: 15px;
             animation: opacity 3s forwards;
-            
             @include shadowBoxResto;
 
                 &__tag{
                     padding: 15px 0 15px 15px;
                     width: 80%;
-                    
                     min-width: 70px;
                     
-
                         & h3{
                             overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         }
+
                         & p{
                             overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
-                        }
-                    
-                    
-                    
+                        }    
                 }
 
                 &__price{
@@ -161,17 +140,10 @@
                     align-items: flex-end;
                     font-size: 14px;
                     font-weight: bold;
-                    padding: 15px 30px 15px 15px;
-
-                    
-                    
+                    padding: 15px 30px 15px 15px;   
                 }
-        }
-       
-        
+        }        
 }
 
-
-// .active:checked + .check{
 
     
