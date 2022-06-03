@@ -20,21 +20,14 @@
 
 
 
-//KEYFRAME + CSS LOADING SCREEN ACCUEIL
+//KEYFRAME + CSS LOADING SCREEN ACCUEIL + apparition menu
 @keyframes apparition{
     
     from{
         transform: translate(0, 320px);
-        
     }
-
-    
-
     to{
-        
         transform: translate(0, 0);
-        
-        
     }
 }
 
